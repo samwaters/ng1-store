@@ -9,6 +9,10 @@ module.exports = {
         {
             test: /\.scss$/,
             loaders: ["style", "css", "sass"]
+        },
+        {
+            test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$/,
+            loader: "file"
         }
     ],
     output: {
