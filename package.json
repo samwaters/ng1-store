@@ -3,8 +3,15 @@
     "angular": "^1.5.8"
   },
   "devDependencies": {
+    "css-loader": "latest",
     "gulp": "latest",
+    "gulp-tslint": "latest",
     "gulp-typescript": "latest",
+    "gulp-util": "latest",
+    "gulp-webpack": "latest",
+    "node-sass": "latest",
+    "sass-loader": "latest",
+    "tslint": "latest",
     "typescript": "^2.0.0",
     "typings": "latest",
     "webpack": "latest"

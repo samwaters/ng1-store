@@ -1,3 +1,8 @@
+--TSLint--
+npm install -g tslint
+tslint init (only needed if no tslint.config)
+Enable tslint support in IDE (if applicable)
+
 --Typings--
 npm install -g typings
 typings init (only needed if typings.json does not exist)

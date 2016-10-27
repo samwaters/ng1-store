@@ -5,6 +5,12 @@ module.exports = {
         app: './app.js',
         vendor: ['angular']
     },
+    loaders: [
+        {
+            test: /\.scss$/,
+            loaders: ["style", "css", "sass"]
+        }
+    ],
     output: {
         filename: 'app.bundle.js',
         path: __dirname + '/js'
