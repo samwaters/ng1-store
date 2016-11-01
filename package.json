@@ -11,6 +11,7 @@
     "gulp-webpack": "latest",
     "node-sass": "latest",
     "sass-loader": "latest",
+    "ts-loader": "latest",
     "tslint": "latest",
     "typescript": "^2.0.0",
     "typings": "latest",

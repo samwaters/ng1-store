@@ -22,7 +22,7 @@
         ],
         "quotemark": [
             true,
-            "double"
+            "single"
         ],
         "semicolon": [
             true,
@@ -51,8 +51,8 @@
             "check-branch",
             "check-decl",
             "check-operator",
-            "check-separator",
-            "check-type"
+            "check-separator"
+
         ]
     }
 }
