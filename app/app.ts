@@ -5,4 +5,3 @@ angular.module('ng1-store', [
   'ui.bootstrap'
 ]);
 
-angular.bootstrap(document.getElementsByTagName('ng1-store')[0], ['ng1-store']);

@@ -1,3 +1,7 @@
+--Bootstrap Styles--
+Include bootstrap.min.css and install angular-ui-bootstrap
+ui-boostrap directives are then available: https://angular-ui.github.io/bootstrap/
+
 --TSLint--
 npm install -g tslint
 tslint init (only needed if no tslint.config)
@@ -11,3 +15,8 @@ typings install dt~angular --global --save
 
 --Webpack--
 npm install -g webpack
+
+--Bootstrapping--
+Can either be done manually:
+angular.bootstrap(document.getElementsByTagName('element')[0], ['module', 'module2']);
+Or by adding ng-app="moduleName" to the root element
