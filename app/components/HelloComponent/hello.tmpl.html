@@ -1,3 +1,15 @@
-<h3>Hello</h3>
-<p>{{singleModel}}</p>
-<button type="button" class="btn btn-primary" uib-btn-checkbox ng-model="singleModel" btn-checkbox-true="1" btn-checkbox-false="0">Toggle</button>
+<h3>{{vm.greeting.message}} @ {{vm.greeting.timestamp}}</h3>
+<p>Toggle Value : {{vm.singleModel}}</p>
+<button
+        type="button"
+        class="btn btn-primary"
+        uib-btn-checkbox
+        ng-model="vm.singleModel"
+        btn-checkbox-true="1"
+        btn-checkbox-false="0"
+>Toggle</button>
+<button
+    type="button"
+    class="btn btn-danger"
+    ng-click="vm.refreshGreeting()"
+    >Refresh</button>
