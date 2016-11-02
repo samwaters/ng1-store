@@ -12,6 +12,7 @@ npm install -g typings
 typings init (only needed if typings.json does not exist)
 typings install
 typings install dt~angular --global --save
+typings install dt~jquery --global --save
 
 --Webpack--
 npm install -g webpack

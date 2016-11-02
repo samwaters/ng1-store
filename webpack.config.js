@@ -1,4 +1,6 @@
+var failPlugin = require('webpack-fail-plugin');
 var webpack = require('webpack');
+
 module.exports = {
     context: __dirname + '/app',
     entry: {
@@ -24,6 +26,7 @@ module.exports = {
         path: __dirname + '/js'
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.bundle.js')
+        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.bundle.js'),
+        failPlugin
     ]
 };

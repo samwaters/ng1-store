@@ -16,7 +16,8 @@
     "tslint": "latest",
     "typescript": "^2.0.0",
     "typings": "latest",
-    "webpack": "latest"
+    "webpack": "latest",
+    "webpack-fail-plugin": "latest"
   },
   "name": "ng1-store",
   "version": "0.0.1"

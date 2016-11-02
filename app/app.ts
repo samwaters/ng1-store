@@ -1,3 +1,4 @@
+/// <reference path="../typings/index.d.ts" />
 import {ComponentsModule} from './components/components.module';
 
 angular.module('ng1-store', [
