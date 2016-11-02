@@ -7,10 +7,9 @@ export class HelloComponent {
   public templateUrl:string;
 
   constructor() {
-    console.warn('dfd');
     this.bindings = {};
     this.controller = HelloController.id;
     this.controllerAs = 'vm';
-    this.templateUrl = 'hello.tmpl.html';
+    this.templateUrl = 'app/components/HelloComponent/hello.tmpl.html';
   }
 }
