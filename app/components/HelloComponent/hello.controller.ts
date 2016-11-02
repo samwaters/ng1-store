@@ -1,7 +1,8 @@
 export class HelloController {
   public static id:string = 'hello.controller';
 
-  constructor() {
-
+  public static $inject = ['$scope'];
+  constructor($scope) {
+    $scope.singleModel = 0;
   }
 }

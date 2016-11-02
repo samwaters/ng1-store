@@ -18,7 +18,7 @@ gulp.task('lint', function() {
 });
 // Watcher to recompile
 gulp.task('watch', function() {
-    gulp.watch('app/**/*.ts', ['lint', 'compile.ts']);
+    gulp.watch('app/**/*.ts', ['webpack']);
 });
 // Webpack build
 gulp.task('webpack', ['lint', 'compile.ts'], function(callback) {

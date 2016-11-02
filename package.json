@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "angular": "^1.5.8"
+    "angular": "^1.5.8",
+    "angular-ui-bootstrap": "latest"
   },
   "devDependencies": {
     "css-loader": "latest",
