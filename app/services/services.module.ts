@@ -1,4 +1,5 @@
-import IModule = angular.IModule;
+import * as angular from 'angular';
+import { IModule } from  'angular';
 import {HelloService} from './hello.service';
 export class ServicesModule {
   public name:string = 'services.module';

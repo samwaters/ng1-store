@@ -4,18 +4,19 @@
     "angular-ui-bootstrap": "latest"
   },
   "devDependencies": {
-    "css-loader": "latest",
+    "@types/angular": "latest",
+    "awesome-typescript-loader": "^2.2.4",
     "gulp": "latest",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
     "gulp-tslint": "latest",
     "gulp-typescript": "latest",
     "gulp-util": "latest",
     "gulp-webpack": "latest",
     "node-sass": "latest",
-    "sass-loader": "latest",
-    "ts-loader": "latest",
     "tslint": "latest",
     "typescript": "^2.0.0",
-    "typings": "latest",
     "webpack": "latest",
     "webpack-fail-plugin": "latest"
   },

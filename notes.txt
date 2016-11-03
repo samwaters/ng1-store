@@ -2,17 +2,16 @@
 Include bootstrap.min.css and install angular-ui-bootstrap
 ui-boostrap directives are then available: https://angular-ui.github.io/bootstrap/
 
+--Styles--
+.scss files are compiled as a pre-webpack task and concatenated into styles/styles.css
+
 --TSLint--
 npm install -g tslint
 tslint init (only needed if no tslint.config)
 Enable tslint support in IDE (if applicable)
 
 --Typings--
-npm install -g typings
-typings init (only needed if typings.json does not exist)
-typings install
-typings install dt~angular --global --save
-typings install dt~jquery --global --save
+Deprecated, install @types/package
 
 --Webpack--
 npm install -g webpack

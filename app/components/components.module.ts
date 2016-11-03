@@ -1,3 +1,4 @@
+import * as angular from 'angular';
 import {HelloModule} from './HelloComponent/hello.module';
 export class ComponentsModule {
   public name:string = 'components-module';

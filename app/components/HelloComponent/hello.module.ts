@@ -1,4 +1,5 @@
-import IModule = angular.IModule;
+import * as angular from 'angular';
+import { IModule } from 'angular';
 import {HelloComponent} from './hello.component';
 import {HelloController} from './hello.controller';
 
