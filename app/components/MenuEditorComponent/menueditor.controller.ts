@@ -22,4 +22,8 @@ export class MenuEditorController {
   public checkbox(item, event) {
     this.menuService.updateMenu(item.id, 'show', event.target.checked);
   }
+
+  public resetMenu() {
+    this.menuService.loadMenu();
+  }
 }
