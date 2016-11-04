@@ -13,7 +13,7 @@ export class MenuEditorController {
     this.menuService.registerServiceBindings($scope, this, {'menu':'menu'});
     this.brand = _.throttle((event) => {
       this.menuService.updateBrand(event.target.value);
-    });
+    }, 250);
     this.keyUp = _.throttle((item, event, field) => {
       this.menuService.updateMenu(item.id, field, event.target.value);
     }, 250);
