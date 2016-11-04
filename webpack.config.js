@@ -7,7 +7,7 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     app: ['./app.ts'],
-    vendor: ['angular', 'angular-ui-bootstrap']
+    vendor: ['angular', 'angular-ui-bootstrap', 'redux', 'ng-redux', 'core-js', 'redux-logger', 'redux-thunk']
   },
   module: {
     loaders: [

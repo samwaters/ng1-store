@@ -26,7 +26,7 @@ gulp.task('webpack', ['lint'], function(callback) {
 });
 // Watcher to recompile
 gulp.task('watch', function() {
-  gulp.watch('app/**/*.ts', ['webpack']);
+  gulp.watch('app/**/*', ['webpack']);
 });
 // Dev server
 gulp.task('ds', function() {
