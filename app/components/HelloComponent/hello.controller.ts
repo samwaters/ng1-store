@@ -1,4 +1,5 @@
 import {HelloService} from '../../services/hello.service';
+require('./hello.scss');
 
 export class HelloController {
   public static id:string = 'hello.controller';

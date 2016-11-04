@@ -1,8 +1,9 @@
 var failPlugin = require('webpack-fail-plugin');
+var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  context: __dirname + '/app',
+  context: path.resolve(__dirname, 'app'),
   devtool: 'source-map',
   entry: {
     app: './app.ts',
@@ -11,6 +12,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
         test: /\.ts$/,
         loader: 'awesome-typescript-loader'
       }
@@ -18,13 +23,13 @@ module.exports = {
   },
   output: {
     filename: 'app.bundle.js',
-    path: __dirname + '/js'
+    path: path.resolve(__dirname, 'js')
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.bundle.js'),
     failPlugin
   ],
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.js', '.sass']
   }
 };

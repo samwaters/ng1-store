@@ -1,9 +1,5 @@
-var concat = require('gulp-concat');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var ts = require('gulp-typescript');
 var tslint = require('gulp-tslint');
 var webpack = require('webpack');
 
@@ -14,16 +10,8 @@ gulp.task('lint', function() {
     }))
     .pipe(tslint.report())
 });
-gulp.task('sass', function() {
-  return gulp.src('app/**/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(sourcemaps.write())
-    .pipe(concat('styles.css'))
-    .pipe(gulp.dest('./styles'));
-});
 // Webpack build
-gulp.task('webpack', ['lint', 'sass'], function(callback) {
+gulp.task('webpack', ['lint'], function(callback) {
   webpack(
     require('./webpack.config.js'),
     function(err, stats) {
