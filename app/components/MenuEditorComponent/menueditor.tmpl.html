@@ -1,0 +1,45 @@
+<div class="menu-editor">
+  <h3>Menu Editor</h3>
+  <div class="menu-brand">
+    <h4>Brand Name</h4>
+    <div class="menu-brand-editor">
+      <input type="text" value="{{vm.menu.brandName}}" ng-keyup="vm.brand($event)" />
+    </div>
+  </div>
+  <div class="menu-left-editor">
+    <h4>Left Menu Items</h4>
+    <div class="menu-element" ng-repeat="item in vm.menu.leftItems">
+      <div class="menu-element-name menu-element-field">
+        <label>Name</label>
+        <input type="text" value="{{item.name}}" ng-keyup="vm.keyUp(item, $event, 'name')" />
+      </div>
+      <div class="menu-element-href menu-element-field">
+        <label>Href</label>
+        <input type="text" value="{{item.href}}" ng-keyup="vm.keyUp(item, $event, 'href')" />
+      </div>
+      <div class="menu-element-href menu-element-field">
+        <label>Visible</label>
+        <input type="checkbox" checked="{{item.show}}" ng-click="vm.checkbox(item, $event)" />
+      </div>
+        <div class="clear"></div>
+    </div>
+  </div>
+  <div class="menu-right-editor">
+    <h4>Right Menu Items</h4>
+    <div class="menu-element" ng-repeat="item in vm.menu.rightItems">
+      <div class="menu-element-name menu-element-field">
+        <label>Name</label>
+        <input type="text" value="{{item.name}}" ng-keyup="vm.keyUp(item, $event, 'name')" />
+      </div>
+      <div class="menu-element-href menu-element-field">
+        <label>Href</label>
+        <input type="text" value="{{item.href}}" ng-keyup="vm.keyUp(item, $event, 'href')" />
+      </div>
+      <div class="menu-element-href menu-element-field">
+        <label>Visible</label>
+        <input type="checkbox" checked="{{item.show}}" ng-click="vm.checkbox(item, $event)" />
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>

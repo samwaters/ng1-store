@@ -2,16 +2,19 @@
   "brandName": "ng1 store test",
   "leftItems": [
     {
+      "id": "L1",
       "name": "Link 1",
       "href": "#",
       "show": true
     },
     {
+      "id": "L2",
       "name": "Link 2",
       "href": "#",
       "show": true
     },
     {
+      "id": "L3",
       "name": "Link 3",
       "href": "#",
       "show": true
@@ -19,11 +22,13 @@
   ],
   "rightItems": [
     {
+      "id": "R1",
       "name": "Link R1",
       "href": "#",
       "show": true
     },
     {
+      "id": "R2",
       "name": "Link R2",
       "href": "#",
       "show": true

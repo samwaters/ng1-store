@@ -5,16 +5,16 @@ import {MenuController} from './menu.controller';
 
 
 export class MenuModule {
-    public name:string = 'menu.module';
-    private _app:IModule;
+  public name:string = 'menu.module';
+  private _app:IModule;
 
-    constructor() {
-        this._app = angular.module(this.name, []);
-        this._init();
-    }
+  constructor() {
+    this._app = angular.module(this.name, []);
+    this._init();
+  }
 
-    private _init() {
-        this._app.component(MenuComponent.id, new MenuComponent());
-        this._app.controller(MenuController.id, MenuController);
-    }
+  private _init() {
+    this._app.component(MenuComponent.id, new MenuComponent());
+    this._app.controller(MenuController.id, MenuController);
+  }
 }
