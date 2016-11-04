@@ -6,7 +6,7 @@ module.exports = {
   context: path.resolve(__dirname, 'app'),
   devtool: 'source-map',
   entry: {
-    app: './app.ts',
+    app: ['./app.ts'],
     vendor: ['angular', 'angular-ui-bootstrap']
   },
   module: {

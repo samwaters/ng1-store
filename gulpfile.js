@@ -1,3 +1,4 @@
+var devserver = require('webpack-dev-server');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var tslint = require('gulp-tslint');
@@ -26,4 +27,15 @@ gulp.task('webpack', ['lint'], function(callback) {
 // Watcher to recompile
 gulp.task('watch', function() {
   gulp.watch('app/**/*.ts', ['webpack']);
+});
+// Dev server
+gulp.task('ds', function() {
+  var config = require('./webpack.config');
+  config.entry.app.unshift('webpack/hot/dev-server');
+  config.plugins.push(new webpack.HotModuleReplacementPlugin());
+  var compiler = webpack(config);
+  new devserver(compiler, {
+    hot: true,
+    publicPath: '/js/'
+  }).listen(8080, "localhost");
 });
