@@ -1,0 +1,27 @@
+{
+  "brandName": "ng1 store test",
+  "leftItems": [
+    {
+      "name": "Link 1",
+      "href": "#"
+    },
+    {
+      "name": "Link 2",
+      "href": "#"
+    },
+    {
+      "name": "Link 3",
+      "href": "#"
+    }
+  ],
+  "rightItems": [
+    {
+      "name": "Link R1",
+      "href": "#"
+    },
+    {
+      "name": "Link R2",
+      "href": "#"
+    }
+  ]
+}
