@@ -31,6 +31,10 @@ export default (state:IMenuState = initialState, action:IAction) => {
       return mutatedState;
     case MenuActions.actions.LOAD_MENU:
       return Object.assign({}, state, {isLoading:true});
+    case MenuActions.actions.REMOVE_ITEM:
+      mutatedState.leftItems = mutatedState.leftItems.filter(item => item.id !== action.payload);
+      mutatedState.rightItems = mutatedState.rightItems.filter(item => item.id !== action.payload);
+      return mutatedState;
     case MenuActions.actions.STORE_MENU:
       return Object.assign({}, state, {
         brandName:action.payload.brandName,

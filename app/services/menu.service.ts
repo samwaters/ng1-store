@@ -42,6 +42,7 @@ export class MenuService extends BaseStoreService {
     return {
       addItem: this.menuActions.addItem,
       loadMenu: this.menuActions.loadMenu,
+      removeItem: this.menuActions.removeItem,
       storeMenu: this.menuActions.storeMenu,
       updateBrand: this.menuActions.updateBrand,
       updateMenu: this.menuActions.updateMenu
@@ -61,6 +62,10 @@ export class MenuService extends BaseStoreService {
     }).then((data) => {
       this.store.storeMenu(data.data);
     });
+  }
+
+  public removeItem(id:string) {
+    this.store.removeItem(id);
   }
 
   public updateBrand(value:string) {

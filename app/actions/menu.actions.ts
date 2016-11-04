@@ -3,9 +3,10 @@ export class MenuActions {
   public static actions = {
     ADD_ITEM: 'ADD_ITEM',
     LOAD_MENU: 'LOAD_MENU',
+    REMOVE_ITEM: 'REMOVE_ITEM',
+    STORE_MENU: 'STORE_MENU',
     UPDATE_BRAND: 'UPDATE_BRAND',
-    UPDATE_MENU: 'UPDATE_MENU',
-    STORE_MENU: 'STORE_MENU'
+    UPDATE_MENU: 'UPDATE_MENU'
   };
 
   public addItem(side) {
@@ -21,6 +22,15 @@ export class MenuActions {
     return (dispatch) => {
       dispatch({
         type: MenuActions.actions.LOAD_MENU
+      });
+    };
+  }
+
+  public removeItem(id) {
+    return (dispatch) => {
+      dispatch({
+        type: MenuActions.actions.REMOVE_ITEM,
+        payload: id
       });
     };
   }

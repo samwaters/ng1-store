@@ -27,6 +27,10 @@ export class MenuEditorController {
     this.menuService.updateMenu(item.id, 'show', event.target.checked);
   }
 
+  public remove(item) {
+    this.menuService.removeItem(item.id);
+  }
+
   public resetMenu() {
     this.menuService.loadMenu();
   }

@@ -9,7 +9,7 @@
       <input type="text" value="{{vm.menu.brandName}}" ng-keyup="vm.brand($event)" />
     </div>
   </div>
-  <div class="menu-left-editor">
+  <div class="menu-left-editor menu-editor-section">
     <div class="right">
       <button class="btn btn-primary" ng-click="vm.addItem('left')">New</button>
     </div>
@@ -23,14 +23,17 @@
         <label>Href</label>
         <input type="text" value="{{item.href}}" ng-keyup="vm.keyUp(item, $event, 'href')" />
       </div>
-      <div class="menu-element-href menu-element-field">
+      <div class="menu-element-visible menu-element-field">
         <label>Visible</label>
         <input type="checkbox" checked="{{item.show}}" ng-click="vm.checkbox(item, $event)" />
       </div>
-        <div class="clear"></div>
+      <div class="menu-element-remove menu-element-field">
+        <button class="btn btn-danger" ng-click="vm.remove(item)">Remove</button>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  <div class="menu-right-editor">
+  <div class="menu-right-editor menu-editor-section">
     <div class="right">
       <button class="btn btn-secondary" ng-click="vm.addItem('right')">New</button>
     </div>
@@ -44,9 +47,12 @@
         <label>Href</label>
         <input type="text" value="{{item.href}}" ng-keyup="vm.keyUp(item, $event, 'href')" />
       </div>
-      <div class="menu-element-href menu-element-field">
+      <div class="menu-element-visible menu-element-field">
         <label>Visible</label>
         <input type="checkbox" checked="{{item.show}}" ng-click="vm.checkbox(item, $event)" />
+      </div>
+      <div class="menu-element-remove menu-element-field">
+        <button class="btn btn-danger" ng-click="vm.remove(item)">Remove</button>
       </div>
       <div class="clear"></div>
     </div>
