@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ng1 store</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>ng1 store</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <ng1-store ng-app="ng1-store">
-        <div class="container-fluid">
-            <div class="row">
-                <menu-component></menu-component>
-            </div>
-            <div class="row">
-                <div class="col col-md-2">
-                    Left
-                </div>
-                <div class="col col-md-10">
-                    <hello-component></hello-component>
-                    <menu-editor-component></menu-editor-component>
-                </div>
-            </div>
+  <ng1-store ng-app="ng1-store">
+    <menu-component></menu-component>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-md-12">
+          <hello-component></hello-component>
+          <menu-editor-component></menu-editor-component>
         </div>
-    </ng1-store>
-    <script src="js/vendor.bundle.js"></script>
-    <script src="js/app.bundle.js"></script>
+      </div>
+    </div>
+  </ng1-store>
+  <script src="js/vendor.bundle.js"></script>
+  <script src="js/app.bundle.js"></script>
 </body>
 </html>
