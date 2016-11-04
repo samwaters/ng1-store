@@ -40,6 +40,7 @@ export class MenuService extends BaseStoreService {
 
   public mapDispatchToThis() {
     return {
+      addItem: this.menuActions.addItem,
       loadMenu: this.menuActions.loadMenu,
       storeMenu: this.menuActions.storeMenu,
       updateBrand: this.menuActions.updateBrand,
@@ -48,6 +49,10 @@ export class MenuService extends BaseStoreService {
   }
 
   // PROXY METHODS
+  public addItem(side:string) {
+    this.store.addItem(side);
+  }
+
   public loadMenu() {
     this.store.loadMenu();
     this.$http({
@@ -58,7 +63,7 @@ export class MenuService extends BaseStoreService {
     });
   }
 
-  public updateBrand(value) {
+  public updateBrand(value:string) {
     this.store.updateBrand(value);
   }
 

@@ -18,7 +18,17 @@ const initialState:IMenuState = {
 };
 
 export default (state:IMenuState = initialState, action:IAction) => {
+  let mutatedState = Object.assign({}, state);
   switch(action.type) {
+    case MenuActions.actions.ADD_ITEM:
+      let newItem = {
+        id: action.payload + new Date().getTime(),
+        name: '',
+        href: '#',
+        show: true
+      };
+      action.payload === 'left' ? mutatedState.leftItems.push(newItem) : mutatedState.rightItems.push(newItem);
+      return mutatedState;
     case MenuActions.actions.LOAD_MENU:
       return Object.assign({}, state, {isLoading:true});
     case MenuActions.actions.STORE_MENU:
@@ -32,7 +42,6 @@ export default (state:IMenuState = initialState, action:IAction) => {
     case MenuActions.actions.UPDATE_BRAND:
       return Object.assign({}, state, {brandName:action.payload});
     case MenuActions.actions.UPDATE_MENU:
-      let mutatedState = Object.assign({}, state);
       mutatedState.leftItems.map((item, index) => {
         if(item.id === action.payload.id) {
           mutatedState.leftItems[index][action.payload.field] = action.payload.value;

@@ -10,6 +10,9 @@
     </div>
   </div>
   <div class="menu-left-editor">
+    <div class="right">
+      <button class="btn btn-primary" ng-click="vm.addItem('left')">New</button>
+    </div>
     <h4>Left Menu Items</h4>
     <div class="menu-element" ng-repeat="item in vm.menu.leftItems">
       <div class="menu-element-name menu-element-field">
@@ -28,6 +31,9 @@
     </div>
   </div>
   <div class="menu-right-editor">
+    <div class="right">
+      <button class="btn btn-secondary" ng-click="vm.addItem('right')">New</button>
+    </div>
     <h4>Right Menu Items</h4>
     <div class="menu-element" ng-repeat="item in vm.menu.rightItems">
       <div class="menu-element-name menu-element-field">

@@ -1,11 +1,21 @@
 export class MenuActions {
   public static id = 'menu.actions';
   public static actions = {
+    ADD_ITEM: 'ADD_ITEM',
     LOAD_MENU: 'LOAD_MENU',
     UPDATE_BRAND: 'UPDATE_BRAND',
     UPDATE_MENU: 'UPDATE_MENU',
     STORE_MENU: 'STORE_MENU'
   };
+
+  public addItem(side) {
+    return (dispatch) => {
+      dispatch({
+        type: MenuActions.actions.ADD_ITEM,
+        payload: side
+      });
+    };
+  }
 
   public loadMenu() {
     return (dispatch) => {
