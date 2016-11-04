@@ -4,7 +4,7 @@
             <a class="navbar-brand">{{vm.menu.brandName}}</a>
         </div>
         <ul class="nav navbar-nav" ng-if="vm.menu.leftItems.length > 0">
-            <li ng-repeat="item in vm.menu.leftItems"><a href="{{item.href}}">{{item.name}}</a></li>
+            <li ng-repeat="item in vm.menu.leftItems" ng-show="item.show"><a href="{{item.href}}">{{item.name}}</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right" ng-if="vm.menu.rightItems.length > 0">
             <li ng-repeat="item in vm.menu.rightItems"><a href="{{item.href}}">{{item.name}}</a></li>

@@ -3,25 +3,30 @@
   "leftItems": [
     {
       "name": "Link 1",
-      "href": "#"
+      "href": "#",
+      "show": true
     },
     {
       "name": "Link 2",
-      "href": "#"
+      "href": "#",
+      "show": true
     },
     {
       "name": "Link 3",
-      "href": "#"
+      "href": "#",
+      "show": true
     }
   ],
   "rightItems": [
     {
       "name": "Link R1",
-      "href": "#"
+      "href": "#",
+      "show": true
     },
     {
       "name": "Link R2",
-      "href": "#"
+      "href": "#",
+      "show": true
     }
   ]
 }

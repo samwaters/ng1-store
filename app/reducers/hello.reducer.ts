@@ -5,7 +5,7 @@ export interface IHelloState {
   greeting:string;
 }
 
-const initialState:IHelloState = {greeting:''};
+const initialState:IHelloState = {greeting:'Hello'};
 
 export default (state:any = initialState, action:IAction) => {
   switch(action.type) {
