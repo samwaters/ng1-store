@@ -58,7 +58,7 @@ export class MenuService extends BaseStoreService {
     this.store.loadMenu();
     this.$http({
       method: 'GET',
-      url: '/app/data/menu.json'
+      url: 'app/data/menu.json'
     }).then((data) => {
       this.store.storeMenu(data.data);
     });

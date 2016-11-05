@@ -3,7 +3,9 @@ Include bootstrap.min.css and install angular-ui-bootstrap
 ui-boostrap directives are then available: https://angular-ui.github.io/bootstrap/
 
 --Styles--
-.scss files are compiled as a pre-webpack task and concatenated into styles/styles.css
+.scss files included via require in controllers
+require is a webpack function goes through the sass-loader to inject the compiled css into the <head>
+To stop tsc complaining about require, a definition is included in app.d.ts
 
 --TSLint--
 npm install -g tslint
