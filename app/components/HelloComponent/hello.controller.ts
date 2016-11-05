@@ -6,12 +6,12 @@ export class HelloController {
 
   public static $inject = ['$scope', HelloService.id];
 
-  public singleModel = 0;
+  public toggle = 0;
   constructor($scope, private helloService) {
     this.helloService.registerServiceBindings($scope, this, {'hello':'hello'});
   }
 
-  public refreshGreeting() {
+  public refresh() {
     this.helloService.updateGreeting('Updated ' + new Date().getTime());
   }
 }

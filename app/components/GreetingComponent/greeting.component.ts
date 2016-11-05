@@ -10,7 +10,8 @@ export class GreetingComponent implements IComponentOptions {
 
   constructor() {
     this.bindings = {
-      greeting: '<'
+      greeting: '<',
+      toggle: '<'
     };
     this.controller = GreetingController.id;
     this.controllerAs = 'vm';
